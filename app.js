@@ -23,6 +23,20 @@ server.post('/api/messages', connector.listen());
 
 //default dialog/route for your bot
 bot.dialog('/', function(session, args){
-    session.send("Hi");
-    console.log(session.message.text);
+    if(!session.userData.greeting){
+        session.send("Hello. What is your name?");
+        session.userData.greeting = true;
+    } else if (!session.userData.name) {
+        getName(session);
+    } else if (!session.userData.email){
+        getEmail(session);
+    } else if (!session.userData.password){
+        getPassword(session);
+    } else {
+        session.userData = null;
+    }
+
+    session.endDialog();
 });
+
+//functions called in the root dialog are now defined
