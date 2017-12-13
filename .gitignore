@@ -60,3 +60,4 @@ typings/
 .env
 
 keys.txt
+constants.js
