@@ -1,0 +1,23 @@
+{
+  "name": "nodebotsample",
+  "version": "1.0.0",
+  "description": "A sample bot writen in node.js and based on the ms bot framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmanlukas/NodeBotSample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmanlukas/NodeBotSample/issues"
+  },
+  "homepage": "https://github.com/pmanlukas/NodeBotSample#readme",
+  "dependencies": {
+    "botbuilder": "^3.13.1",
+    "http": "0.0.0"
+  }
+}
